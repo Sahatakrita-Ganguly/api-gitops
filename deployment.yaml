@@ -17,6 +17,7 @@ spec:
       - name: ghcr-secret
       containers:
       - name: grade-submission-api
+        # The pipeline replaces the tag below automatically
         image: ghcr.io/sahatakrita-ganguly/cicd-gitops:latest
         ports:
         - containerPort: 3000
